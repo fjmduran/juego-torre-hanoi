@@ -1,0 +1,7 @@
+<div class="wrapper" (click)="goAHead()">    
+    <div class="edge"></div>
+    <ng-container *ngFor="let disc of discs;">
+        <div #discos class="element">{{disc}}</div>
+    </ng-container>        
+</div>
+<p class="greated" *ngIf="isSolvedProblem()">🎉</p>

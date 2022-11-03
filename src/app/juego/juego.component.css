@@ -1,0 +1,13 @@
+.gameWrapper{    
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+app-torre{
+    width: 30%;
+}
+
+app-torre:hover{
+    cursor: pointer;
+}

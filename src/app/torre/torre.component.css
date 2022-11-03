@@ -1,0 +1,33 @@
+.wrapper{    
+    background-color: gainsboro;
+    width: 100%;
+    height: 40vh;
+
+    border-bottom: black solid 1rem;
+    
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    position: relative; /* esto es porque para que un hijo se posicion en relative y poder moverlo, el padre tiene que estar posicionado, es este caso lo pongo a relative para posicionarlo y que se quede en su sitio */
+}
+
+.edge{    
+    height: 100%;
+    width: 1rem;
+    background-color: black;
+
+    position: absolute;
+    top: 0;    
+}
+
+.element{
+    height: 2rem;
+    z-index: 1;
+
+    border-radius: 0.3rem;
+}
+
+.greated{
+    font-size: 3rem;
+}

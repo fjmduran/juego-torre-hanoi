@@ -1,0 +1,19 @@
+<div class="gameWrapper">
+    <app-torre
+      [discs]="[0, 1, 2, 3,4]"
+      [numberOfDiscs]="5"
+      [$discInAir]="discInAir"
+      (outputDisc)="putDiscInAir($event)"
+    ></app-torre>
+    <app-torre
+      [$discInAir]="discInAir"
+      [numberOfDiscs]="5"
+      (outputDisc)="putDiscInAir($event)"
+    ></app-torre>
+    <app-torre
+      [$discInAir]="discInAir"
+      [numberOfDiscs]="5"
+      (outputDisc)="putDiscInAir($event)"
+    ></app-torre>
+  </div>
+

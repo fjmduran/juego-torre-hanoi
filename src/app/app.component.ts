@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hanoiTower';
+
+  ngOnInit(): void {
+    this.goToSection("game");
+  }
+
+  public goToSection(section: string): void {
+    const element = document.getElementById(section);
+    element?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
